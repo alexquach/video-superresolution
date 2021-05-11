@@ -3,16 +3,17 @@ clc;
 close all;
 
 %%  Set up parameters for training
-dataFolder = '../CDVL_Processed/train/';
+dataFolder = '../hmbd51/train/';
 % total_train_patch_number = 225000;
 % total_val_patch_number = 45000;
 frame_number = 5;
 frame_sample_rate = 2;
 patch_size = 72;
+
 upscale_factor = 2;
 
-frameHeight_HR = 1080;
-frameWidth_HR = 1920;
+frameHeight_HR = 240; % 1080;
+frameWidth_HR = 320; % 1920;
 
 frameHeight_LR = frameHeight_HR/upscale_factor;
 frameWidth_LR = frameWidth_HR/upscale_factor;
